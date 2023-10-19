@@ -1,0 +1,28 @@
+header{
+    height: 150px;
+    background: aqua;
+
+}
+header h1{
+    top: 25%;
+    position: relative;
+}
+.col-4 button{
+    width: 100%;
+}
+
+header img{
+    width: 150px;
+}
+.subtitle{
+    background-color: aliceblue;
+    height: 150px;
+}
+
+.subtitle h1{
+    padding-top: 50px;
+}
+.not-active{
+pointer-events: none; 
+cursor: default; 
+}

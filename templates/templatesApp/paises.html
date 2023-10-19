@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{%static "css/estilos.css" %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-4">
+            <img src="{%static "paises.png" %}" alt="">
+        </div>
+        <div class="col-8">
+        <h1>PAISES</h1>
+    </div>
+    </div>
+    </header>
+        <section>
+            <div class="row">
+                <div class="col-3">
+                    <a href="/chile" class={{disabled}}>
+                        <button type="button" class="btn btn-primary w-100">Chile</button>
+                </a>
+                </div>
+                <div class="col-3">
+                    <a href="/venezuela" class={{disabled2}}>
+                        <button type="button" class="btn btn-success w-100">Venezuela</button>
+                </a>
+                </div>
+                <div class="col-3">
+                    <a href="/cuba" class={{disabled3}}>
+                        <button type="button" class="btn btn-warning w-100">Cuba</button>
+                </a>
+                </div>
+                <div class="col-3">
+                    <a href="/index">
+                        <button type="button" class="btn btn-danger w-100">DJANGO SHOP</button>
+                </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<section>
+
+    <div class="card mb-3">
+        <img src="{%static imagenBandera %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{nombre}}</h5>
+          <p class="card-text">{{idioma}}</p>
+          <p class="card-text">{{lema}}</p>
+          <p class="card-text">{{continente}}</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+</section>
+
+
+
+    </div>
+</body>
+
+</html>
