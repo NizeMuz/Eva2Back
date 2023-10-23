@@ -8,10 +8,10 @@ def Inicio(request):
 def Hellblade(request):
      data = {
           "imagenBandera" : "Hellblade.jpg",
-          "nombre": "Nombre: Hellblade",
-          "idioma": "Fecha de estreno: 8 de agosto de 2017",
+          "nombre": "Nombre: Hellblade 2",
+          "idioma": "Fecha de estreno: 2024",
           "lema": "Desarollador: Ninja Theory",
-          "continente": "Plataformas: Nintendo Switch, Xbox series X|S",
+          "continente": "Plataformas: Xbox series X|S",
           "disabled" : "not-active"
           }
      return render(request,'templatesApp/juegos.html', data)
@@ -31,7 +31,7 @@ def Doom(request):
 
 def Halo(request):
      data = {
-          "imagenBandera" : "Halo.jpg",
+          "imagenBandera" : "halo.jpg",
           "nombre": "Nombre: Halo",
           "idioma": "Fecha de estreno: 15 de noviembre de 2021",
           "lema": "Desarollador: 343 Industries",
