@@ -20,10 +20,10 @@ from app1.views import index
 from app1.views import electronica
 from app1.views import juguetes
 from app1.views import ropa
-from paises.views import Chile
-from paises.views import Cuba
-from paises.views import Venezuela
-from paises.views import Inicio
+from juegos.views import Hellblade
+from juegos.views import Doom
+from juegos.views import Halo
+from juegos.views import Inicio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,10 +31,10 @@ urlpatterns = [
     path('electronica/', electronica),
     path('juguetes/', juguetes),
     path('ropa/', ropa),
-    path('chile/', Chile),
-    path('cuba/', Cuba),
-    path('venezuela/', Venezuela),
-    path('inicio/', Inicio)
+    path('Hellblade/', Hellblade),
+    path('Doom/', Doom),
+    path('Halo/', Halo),
+    path('inicio/', Inicio),
     
     
 ]
