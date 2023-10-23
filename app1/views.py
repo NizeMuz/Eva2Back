@@ -14,15 +14,15 @@ def electronica(request):
           "nombre": "Electronica",
           "articulo1": "Mac",
           "articulo2": "Iphone",
-          "articulo3": "PlayStation"
+          "articulo3": "Xbox Series X|S"
           }
      return render(request,'templatesApp/productos.html', data)
 
 def juguetes(request):
      data = {
          "nombre": "Juguetes",
-         "articulo1": "Auto",
-         "articulo2": "Pelota de futbol",
+         "articulo1": "Moto",
+         "articulo2": "Cubo rubik",
          "articulo3": "Figura de accion" 
      }
      return render(request,'templatesApp/productos.html', data)
